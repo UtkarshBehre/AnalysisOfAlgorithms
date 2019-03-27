@@ -1,2 +1,6 @@
 # AnalysisOfAlgorithms
-Includes implementation of all of the algorithms in Java
+Includes implementation of the following algorithms in Java
+
+| Algorithm  	| Worst Case | Best Case |
+| -------------	| :--------: | --------: |
+| Linear Search |    O(n)    | O(1) 	 |
