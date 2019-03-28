@@ -1,10 +1,11 @@
-package searchingAlgorithms.practiceImplemetations;
+package searchingAlgorithms.implementations;
 
 public class InterpolationSearchPractice {
 	
 	/**
 	 * logic for interpolation search algo
 	 * probe position formula: pos = lo + [ (x-arr[lo])*(hi-lo) / (arr[hi]-arr[Lo]) ]
+	 * Time Complexity: O(n) | if array is uniformly distributed O(loglogn)
 	 * @param arr
 	 * @param x
 	 * @return

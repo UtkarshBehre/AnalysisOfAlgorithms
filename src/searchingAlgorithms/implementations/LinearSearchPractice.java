@@ -1,9 +1,12 @@
-package searchingAlgorithms.practiceImplemetations;
+package searchingAlgorithms.implementations;
 
 public class LinearSearchPractice {
 
 	/**
-	 * linear search logic
+	 * logic for Linear Search algorithm
+	 * search linearly from first element to last until the element is found
+	 * Worst case O(n)
+	 * best case O(1)
 	 * @param arr == given array
 	 * @param x = integer to search
 	 * @return

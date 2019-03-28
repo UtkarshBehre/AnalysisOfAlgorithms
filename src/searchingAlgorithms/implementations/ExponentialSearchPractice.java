@@ -1,4 +1,4 @@
-package searchingAlgorithms.practiceImplemetations;
+package searchingAlgorithms.implementations;
 
 public class ExponentialSearchPractice {
 	
