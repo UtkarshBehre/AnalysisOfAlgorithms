@@ -12,3 +12,9 @@ This repository includes implementations of the following algorithms in Java.
 | Exponential Search	| O(logn)    	  | jump step starts from 1 and doubles every turn until element found, then perform binary search in elements between last jump point and current |
 | Ternary Search		| O(log<sub>c</sub>n)| just like binary search except the array is divided in more than 2 parts |
 ***
+
+## Sorting Algorithms
+***
+|Sorting Algorithms		| Time Complexity | How it works |
+|:---------------------:| :--------------:| :----------- |
+|Selection sort			| O(n<sup>2</sup> |
