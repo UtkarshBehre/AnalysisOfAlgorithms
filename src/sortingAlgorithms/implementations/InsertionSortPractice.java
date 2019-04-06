@@ -15,16 +15,22 @@ public class InsertionSortPractice {
 		
 		// loop in ascending order
 		for(int i = 0; i<arr.length;i++) {
-			int j = i;
-			// loop in descending order from current i key 
-			// to the starting or until minimum is reached as left side will be sorted
-			for(j = i; j>0 && arr[j]>arr[i]; j--) {
-				arr[j-1] = arr[j];
-			}
-			arr[j] =arr[i];
+			int j = i-1;
+			int key = arr[i];
+			/*	loop in descending order from current i key 
+				to the starting or until minimum is reached as left side will be sorted
+				Move elements of arr[0..i-1], that are 
+            	greater than key, to one position ahead 
+            	of their current position */
+			while (j >= 0 && arr[j] > key) { 
+                arr[j + 1] = arr[j]; 
+                j = j - 1; 
+            } 
+            arr[j + 1] = key; 
 		}
 	}
 	
+	// prints array
 	static void printArray(int[] arr) {
 		for(int i : arr) {
 			System.out.print(i+" ");
