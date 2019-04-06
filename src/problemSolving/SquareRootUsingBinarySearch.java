@@ -2,7 +2,7 @@ package problemSolving;
 
 /**
  * How to find square root of a large number in O(logn) time.
- * @author ab70352
+ * @author Utkarsh
  *
  */
 public class SquareRootUsingBinarySearch {
