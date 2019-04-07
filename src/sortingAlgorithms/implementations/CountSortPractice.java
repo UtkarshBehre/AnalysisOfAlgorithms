@@ -1,6 +1,6 @@
 package sortingAlgorithms.implementations;
 
-public class CountingSortPractice {
+public class CountSortPractice {
 	
 	/**
 	 * logic for counting sort when there are only positive integers that are not too big
@@ -37,8 +37,9 @@ public class CountingSortPractice {
 			count[i] = count[i-1]+count[i];
 		
 		// find the right position for elements in given array using count and put them in sorted array
-		for(int i = 0; i<n; i++)
-			// actualy count value represents 1 more than actual index value as 0 is not included
+		// NOTE: we run reverse loop so that previous sorted order is maintained
+		for(int i = n-1; i>=0; i--)
+			// actually count value represents 1 more than actual index value as 0 is not included
 			sortedArr[--count[arr[i]]-1] = arr[i];
 		
 		// reassign sorted array to given array
