@@ -88,7 +88,7 @@ public class CountSortPractice {
 			count[i] += count[i-1];
 		
 		// assign the element in the right position using count array to the sorted array
-		for(int i=0; i<n; i++)
+		for(int i = n-1; i>=0; i--)
 			// actualy count value represents 1 more than actual index value as 0 is not included
 			sortedArr[--count[arr[i]-min]] = arr[i];
 		
@@ -122,7 +122,7 @@ public class CountSortPractice {
 			count[i] += count[i-1];
 		
 		// copy elements in right positions using count array
-		for(int i=0; i<n; i++)
+		for(int i = n-1; i>=0; i--)
 			// count -1 to consider 0th index
 			sortedArr[--count[(int)arr[i]]] = arr[i];
 		
