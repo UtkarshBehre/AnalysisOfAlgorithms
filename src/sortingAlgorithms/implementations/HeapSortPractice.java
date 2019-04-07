@@ -1,6 +1,6 @@
 package sortingAlgorithms.implementations;
 
-public class HeapSort {
+public class HeapSortPractice {
 
 	/**
 	 * logic to heapify an array
