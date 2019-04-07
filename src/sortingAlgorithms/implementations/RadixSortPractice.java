@@ -1,7 +1,5 @@
 package sortingAlgorithms.implementations;
 
-import java.util.Arrays;
-
 public class RadixSortPractice {
 
 	/**
