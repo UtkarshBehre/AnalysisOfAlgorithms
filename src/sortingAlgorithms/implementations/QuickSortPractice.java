@@ -33,6 +33,36 @@ public class QuickSortPractice {
 	}
 	
 	/**
+	 * logic for quickSort algorithm using iterative approach
+	 * uses stack concept to carry left and right indexes so that functionality is same as recursive approach
+	 */
+	public static void quickSortIterative(int[] arr, int l, int r) {
+		int[] stack = new int[arr.length];
+		int top = -1;
+
+		stack[++top] = l;
+		stack[++top] = r;
+
+		while(top >=0) {
+			r = stack[top--];
+			l = stack[top--];
+			
+			if(l>r)
+				return;
+			int pi = partitionUsingLast(arr, l, r);
+			if(pi-1 > l) {
+				stack[++top] = l;
+				stack[++top] = pi-1;
+			}
+				
+			if(pi+1 < r) {
+				stack[++top] = pi+1;
+				stack[++top] = r;
+			}
+		}
+	}
+	
+	/**
 	 * logic for partitioning using last index as pivot |
 	 * in this case we loop through elements excluding last one
 	 * we maintain i while swaping each element
@@ -208,7 +238,8 @@ public class QuickSortPractice {
 	// Tester code
 	public static void main(String[] args){
 		int[] arr = {10,74,273,74,28,473,72,26,16,6,95};
-		quickSort(arr, 0, arr.length-1);
+		//quickSort(arr, 0, arr.length-1);
+		quickSortIterative(arr, 0, arr.length-1);
 		printArr(arr);
 		//System.out.println(genRandom(13));
 	}
