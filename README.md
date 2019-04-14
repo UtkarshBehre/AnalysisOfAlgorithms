@@ -23,3 +23,6 @@ This repository includes implementations of the following algorithms in Java.
 |	Merge Sort			| O(nlogn)		  | keep dividing by half until 1 element then start merging the sorted arrays until all subarrays are merged|
 |	Heap Sort			| O(nlogn)		  | heapify the given array then loop from last to first swapping first (biggest) element with current and heapify the array leaving the swapped elements
 |	Quick Sort			| O(n<sup>2</sup>) | sort by pick a pivot index, then put the element in correct position, then sorting left and right sub arrays from pivot|
+|   Count Sort			| O(n)			   | use the array index as element representation and put the count of each element in the index, add these counts in cumulative way. Now place the element in its correct position using the count array	| 
+|	Radix Sort			| O(d*(n+r)		   | use count sort for each digit starting from units digit and so on. the elements get sorted according to highest digit to the lowest digit	|
+|   Bucket Sort			| O(n)			   | store uniformly distributed elements in buckets keeping elements starting with same digit in same bucket, then use selection sort for each bucket and finally place the elements in order to get sorted array	|
