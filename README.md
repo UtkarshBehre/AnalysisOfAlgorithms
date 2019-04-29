@@ -24,7 +24,7 @@ This repository includes implementations of the following algorithms in Java.
 |	Heap Sort			| O(nlogn)		  | heapify the given array then loop from last to first swapping first (biggest) element with current and heapify the array leaving the swapped elements
 |	Quick Sort			| W: O(n<sup>2</sup>) A: O(nlogn) | sort by pick a pivot index, then put the element in correct position, then sorting left and right sub arrays from pivot. Done in iterative and recursive approach. |
 |   Count Sort			| O(n)			   | use the array index as element representation and put the count of each element in the index, add these counts in cumulative way. Now place the element in its correct position using the count array	| 
-|	Radix Sort			| O(d*(n+r)		   | use count sort for each digit starting from units digit and so on. the elements get sorted according to highest digit to the lowest digit	|
+|	Radix Sort			| O(d*(n+r))		   | use count sort for each digit starting from units digit and so on. the elements get sorted according to highest digit to the lowest digit	|
 |   Bucket Sort			| O(n)			   | store uniformly distributed elements in buckets keeping elements starting with same digit in same bucket, then use selection sort for each bucket and finally place the elements in order to get sorted array	|
 |   Binary Insertion Sort | O(n<sup>2</sup>) | similar to insertion sort, except this uses binary search to find right position instead of second for loop. This still uses for loop to swap elements so worst case is still O(n<sup>2</sup>) but reduces number of comparisons done |
 | Insertion Sort for Linked List | O(n<sup>2</sup>) | use a new list to insert nodes from old in the new list in sorted way then point the head to the head of new list |
