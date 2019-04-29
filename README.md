@@ -28,3 +28,7 @@ This repository includes implementations of the following algorithms in Java.
 |   Bucket Sort			| O(n)			   | store uniformly distributed elements in buckets keeping elements starting with same digit in same bucket, then use selection sort for each bucket and finally place the elements in order to get sorted array	|
 |   Binary Insertion Sort | O(n<sup>2</sup>) | similar to insertion sort, except this uses binary search to find right position instead of second for loop. This still uses for loop to swap elements so worst case is still O(n<sup>2</sup>) but reduces number of comparisons done |
 | Insertion Sort for Linked List | O(n<sup>2</sup>) | use a new list to insert nodes from old in the new list in sorted way then point the head to the head of new list |
+| Merge sort for Singly linked list | O(nlogn)	| similar to merge sort other than relinking the nodes appropriately using a new list	| 
+| Merge Sort for doubly linked list | O(nlogn) | similar to merge sort for singly linked list except here we maintain prev links for each node as well |
+| Quick sort for singly linked list | O(n<sup>2</sup>) | same quick sort logic except here we use new linked list to add the left, pivot and the right part of sorted list into 1 | 
+| Quick Sort for doubly linked list | O(n<sup>2</sup>) | same quick sort logic except here we use new linked list to add the left, pivot and the right part of sorted list into 1 whilst maintaining prev links|
