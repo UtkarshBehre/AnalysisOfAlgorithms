@@ -32,3 +32,14 @@ This repository includes implementations of the following algorithms in Java.
 | Merge Sort for doubly linked list | O(nlogn) | similar to merge sort for singly linked list except here we maintain prev links for each node as well |
 | Quick sort for singly linked list | O(n<sup>2</sup>) | same quick sort logic except here we use new linked list to add the left, pivot and the right part of sorted list into 1 | 
 | Quick Sort for doubly linked list | O(n<sup>2</sup>) | same quick sort logic except here we use new linked list to add the left, pivot and the right part of sorted list into 1 whilst maintaining prev links|
+***
+
+## Data Structures
+***
+| Data Structure | Action | Time Complexity | Approach | File |
+|:--------------:|:------:| :--------------:|:--------:|
+| Linked List    | add, add first, remove last, remove first, contains | O(n), O(1), O(n), O(1), O(n) | iterative | LinkedListGeneric.java |
+| Linked List    | swap 2 nodes | O(n) | Recursive | SwapInLinkedList.java |
+| Linked List 	 | reverse the list, reverse in groups | O(n) | Iterative, Recursive, group wise recursive | ReverseLinkedList.java |
+
+***

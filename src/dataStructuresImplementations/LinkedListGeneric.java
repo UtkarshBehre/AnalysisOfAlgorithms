@@ -1,9 +1,9 @@
 package dataStructuresImplementations;
 
-public class LinkedList<E> {
+public class LinkedListGeneric<E> {
 	public ListNode<E> first;
 	
-	public LinkedList() {
+	public LinkedListGeneric() {
 		first = null;
 	}
 	
@@ -71,7 +71,7 @@ public class LinkedList<E> {
 	
 	
 	public static void main(String[] args) {
-		LinkedList<Integer> list = new LinkedList<Integer>();
+		LinkedListGeneric<Integer> list = new LinkedListGeneric<Integer>();
 		list.add(24);
 		list.add(56);
 		list.removeLast();
