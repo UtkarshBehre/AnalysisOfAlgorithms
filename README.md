@@ -39,7 +39,7 @@ This repository includes implementations of the following algorithms in Java.
 | Data Structure | Action | Time Complexity | Approach | File |
 |:--------------:|:------:| :--------------:|:--------:|:----:|
 | Linked List    | add, add first, remove last, remove first, contains | O(n), O(1), O(n), O(1), O(n) | iterative | LinkedListGeneric.java |
-| Linked List    | swap 2 nodes | O(n) | Recursive | SwapInLinkedList.java |
-| Linked List 	 | reverse the list, reverse in groups | O(n) | Iterative, Recursive, group wise recursive | ReverseLinkedList.java |
-
+| Linked List    | swap 2 nodes | O(n) | Recursive | LinkedListSwapNodes.java |
+| Linked List 	 | reverse the list, reverse in groups | O(n) | Iterative, Recursive, group wise recursive | LinkedListReverse.java |
+| Linked List 	 | detect and remove loop | O(n) | using ArrayList, HashSet, iterative linked list | LinkedListDetectLoop.java |
 ***

@@ -1,5 +1,7 @@
 package dataStructuresImplementations;
 
+import dataStructuresImplementations.LinkedListReverse.LinkedList.Node;
+
 public class LinkedListGeneric<E> {
 	public ListNode<E> first;
 	
@@ -69,6 +71,13 @@ public class LinkedListGeneric<E> {
 		}
 	}
 	
+	public void print(){
+		ListNode<E> temp = this.first;
+		while(temp!=null){
+			System.out.print(temp.e+" ");
+			temp = temp.next;
+		}
+	}
 	
 	public static void main(String[] args) {
 		LinkedListGeneric<Integer> list = new LinkedListGeneric<Integer>();

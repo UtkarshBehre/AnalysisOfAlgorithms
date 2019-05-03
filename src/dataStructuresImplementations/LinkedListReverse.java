@@ -5,7 +5,7 @@ package dataStructuresImplementations;
  * Runtime: O(n)
  * @author Utkarsh
  */
-public class ReverseLinkedList {
+public class LinkedListReverse {
 	
 	// tester
 	public static void main(String[] args){

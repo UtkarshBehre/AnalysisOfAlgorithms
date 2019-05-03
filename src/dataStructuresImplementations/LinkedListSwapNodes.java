@@ -6,7 +6,7 @@ package dataStructuresImplementations;
  * @author Utkarsh
  *
  */
-public class SwapInLinkedList {
+public class LinkedListSwapNodes {
 	
 	// tester
 	public static void main(String[] args){
