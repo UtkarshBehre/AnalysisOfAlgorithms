@@ -39,7 +39,7 @@ public class LinkedListDetectLoop {
 	
 	/**
 	 * detect and remove loop using HashSet
-	 * Runtime: O(n)
+	 * Runtime: O(n) | would be O(n^2) if bucketing is not done properly in hashset
 	 * @param head
 	 * @return
 	 */

@@ -42,4 +42,5 @@ This repository includes implementations of the following algorithms in Java.
 | Linked List    | swap 2 nodes | O(n) | Recursive | LinkedListSwapNodes.java |
 | Linked List 	 | reverse the list, reverse in groups | O(n) | Iterative, Recursive, group wise recursive | LinkedListReverse.java |
 | Linked List 	 | detect and remove loop | O(n) | using ArrayList, HashSet, iterative linked list | LinkedListDetectLoop.java |
+| Circular Linked List | add at last, add at first, add after | O(n) | Iterative | CircularLinkedList.java |
 ***
