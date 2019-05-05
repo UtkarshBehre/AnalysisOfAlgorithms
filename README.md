@@ -45,5 +45,6 @@ This repository includes implementations of the following algorithms in Java.
 | Circular Linked List | add at last, add at first, add after | O(n) | Iterative | CircularLinkedList.java |
 | Stack | push, pop, peek, isEmpty | O(1) | FILO or First In Last Out, LIFO or Last In First Out | StackOperations.java |
 | TwoStack | push1, push2, pop1, pop2 | O(1) | FILO, LIFO | TwoStacks.java |
+| SpecialStack | push, pop, getMin | O(1) | FILO,LIFO | SpecialStack.java |
  
 ***
