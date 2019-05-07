@@ -24,17 +24,16 @@ public class KStacks {
 	 * @param k = given number of stacks to be made
 	 */
 	public KStacks(int size, int k){
-		arr = new int[size];
+		arr = new int[size]; 	
 		next = new int[size];
 		top = new int[k];
 		for(int i = 0; i<size; i++){
-			next[i] = i+1;
+			next[i] = i+1; // this would just hold next empty slot available in start
 		}
-		next[size-1] = -1;
-		
+		next[size-1] = -1; // last value would be -1 to represent overflow
+		free = 0; 		   // free would be 0 at start as 0 is first empty space
 		for(int i = 0; i<k; i++)
-			top[i] = -1;
-		
+			top[i] = -1;   // all top pointers will be -1
 	}
 	
 	/** since full is not denoted by whether top is hitting array end
