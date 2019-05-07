@@ -47,5 +47,6 @@ This repository includes implementations of the following algorithms in Java.
 | TwoStack | push1, push2, pop1, pop2 | O(1) | FILO, LIFO | TwoStacks.java |
 | SpecialStack | push, pop, getMin | O(1) | FILO,LIFO | SpecialStack.java |
 | KStacks | push, pop | O(1) | FILO, LIFO | KStacks.java |
+| Queue.java	| enqueue, dequeue, front, rear | O(1) | FIFO, LILO | Queue.java | 
  
 ***
