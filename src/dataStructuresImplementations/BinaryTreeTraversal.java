@@ -14,7 +14,6 @@ public class BinaryTreeTraversal {
 	/**
 	 * Simple recursive solution
 	 * Runtime: O(n)
-	 * @param root
 	 */
 	static void printInOrder(Node root){
 		if(root == null)
@@ -28,7 +27,6 @@ public class BinaryTreeTraversal {
 	 * print inOrder using stack with single while loop for
 	 * reaching all the nodes.
 	 * Runtime: O(n)
-	 * @param root
 	 */
 	static void printInOrderUsingStack(Node root) {
 		if(root == null)
@@ -75,6 +73,50 @@ public class BinaryTreeTraversal {
 			System.out.print(cur+" ");
 			cur = cur.right;
 			
+		}
+	}
+	
+	/**
+	 * print inOrder using threaded binary tree approach where we simply 
+	 * link the root of left node to the right most node of the left node 
+	 * and so on and we restructure the links once done with that subtree.
+	 * Since inorder is left root right, we attach root to left so we
+	 * end up having continuity in the desired order. for post order this
+	 * can be done to the right child instead.
+	 */
+	static void printInOrderUsingMorris(Node root){
+		Node current;
+		Node pre;
+		if(root==null)
+			return;
+		current = root;
+		while(current!=null){
+			// when the left most node is hit print and go to its right which
+			// would be either actual right or link to its root set later
+			if(current.left==null){
+				System.out.print(current.val+" ");
+				current = current.right;
+			}
+			else{
+				// if anything found on left set to pre and attach it to right
+				// most of pre if there is no current present already
+				pre = current.left;
+				while(pre.right!=null && pre.right!=current){
+					pre = pre.right;
+				}
+				// if pre.right is null means this part is untouched and we set
+				// the current to right
+				if(pre.right==null){
+					pre.right = current;
+					current = current.left;
+				}
+				else{
+					// if it wasn't null means current was hit so break the link
+					pre.right = null;
+					System.out.print(current.val+" ");
+					current = current.right;
+				}
+			}
 		}
 	}
 	

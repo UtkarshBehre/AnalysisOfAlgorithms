@@ -27,7 +27,8 @@ public class BinaryTreeLevelOrder {
 		 */
 		public void printLevelOrderUsingQueue(){
 			java.util.Queue<Node> queue = new LinkedList<Node>();
-			queue.add(root);
+			if(root!=null)
+				queue.add(root);
 			while(!queue.isEmpty()){
 				Node tmp = queue.poll();
 				if(tmp.left!=null)
