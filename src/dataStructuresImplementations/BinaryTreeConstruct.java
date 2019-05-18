@@ -1,9 +1,6 @@
 package dataStructuresImplementations;
 
 import java.util.HashMap;
-import java.util.Stack;
-
-import dataStructuresImplementations.BinaryTreeTraversal.Node;
 
 public class BinaryTreeConstruct {
 	

@@ -1,7 +1,5 @@
 package dataStructuresImplementations;
 
-import dataStructuresImplementations.LinkedListReverse.LinkedList.Node;
-
 public class LinkedListGeneric<E> {
 	public ListNode<E> first;
 	
