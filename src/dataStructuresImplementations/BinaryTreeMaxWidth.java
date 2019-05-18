@@ -3,6 +3,11 @@ package dataStructuresImplementations;
 import java.util.HashMap;
 import java.util.LinkedList;
 
+/**
+ * Maximum width of a binary tree
+ * Runtime: O(n)
+ * @author Utkarsh
+ */
 public class BinaryTreeMaxWidth {
 	static class Node{
 		int val;

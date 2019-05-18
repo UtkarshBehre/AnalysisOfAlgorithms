@@ -1,5 +1,13 @@
 package dataStructuresImplementations;
 
+/**
+ * find diameter of a Binary Tree
+ * The diameter of a tree (sometimes called the width) is the number 
+ * of nodes on the longest path between two end nodes.
+ * Runtime: O(n)
+ * @author Utkarsh
+ *
+ */
 public class BinaryTreeDiameter {
 
 	static class Node{
@@ -18,6 +26,7 @@ public class BinaryTreeDiameter {
 		Node root;
 		
 		/**
+		 * slow solution
 		 * finds longest path between two leaf nodes in a tree
 		 * even though this looks simple, since we call height
 		 * recursively makes this solution quadratic
@@ -55,6 +64,7 @@ public class BinaryTreeDiameter {
 		}
 		
 		/**
+		 * Best solution
 		 * solution that finds height and diameter for each node for
 		 * only that level so it does not involve double looping like 
 		 * in the other solution making this a linear time approach

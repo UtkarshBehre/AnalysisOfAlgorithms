@@ -2,6 +2,11 @@ package dataStructuresImplementations;
 
 import java.util.HashMap;
 
+/**
+ * Construct Tree from given Inorder and Preorder traversals
+ * @author Utkarsh
+ *
+ */
 public class BinaryTreeConstruct {
 	
 	static class Node{
