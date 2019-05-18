@@ -51,4 +51,5 @@ This repository includes implementations of the following algorithms in Java.
 | Queue | enqueue, dequeue | O(1) | using linked list FIFO, LILO | QueueUsingLinkedList.java |
 | Binary Tree | InOrder w/wo using stack and morris, PreOrder, and PostOrder traversals | O(n) | left root right, root left right, left right root | BinaryTreeTraversal.java |
 | Binary Tree | level order or breadth first traversal | O(n) | using queue, recursive, arrays | BinaryTreeLevelOrder.java |
+| Binary Tree | find diameter, find height | O(n) | recursive, iterative | BinaryTreeDiameter.java | 
 ***
