@@ -53,4 +53,5 @@ This repository includes implementations of the following algorithms in Java.
 | Binary Tree | level order or breadth first traversal | O(n) | using queue, recursive, arrays | BinaryTreeLevelOrder.java |
 | Binary Tree | find diameter, find height | O(n) | recursive, iterative | BinaryTreeDiameter.java |
 | Binary Tree | construct using given InOrder and PreOrder | O(n) | recursive | BinaryTreeConstruct.java |
+| Binary Tree | find max width | O(n) | recursive, iterative using queue | BinaryTreeMaxWidth.java |
 ***
