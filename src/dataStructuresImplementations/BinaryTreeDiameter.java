@@ -54,13 +54,9 @@ public class BinaryTreeDiameter {
 		 * @return
 		 */
 		public int height(Node node){
-			int h = 0;
 			if(node == null)
 				return 0;
-			int h1 = height(node.left);
-			int h2 = height(node.right);
-			h = h1>h2?h1:h2;
-			return h+1;
+			return Math.max(height(node.left), height(node.right))+1;
 		}
 		
 		/**
