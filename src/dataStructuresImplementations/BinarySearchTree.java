@@ -1,7 +1,7 @@
 package dataStructuresImplementations;
 
 /**
- * Binary Search Tree Search and Insertion
+ * Binary Search Tree Search, insert, delete, and find the node with minimum value
  * Runtime: O(h), h is height of the bst which could be n in worst case of a skewed tree
  * n in worst case of skewed tree
  * @author Utkarsh
@@ -38,7 +38,7 @@ public class BinarySearchTree {
 		 * @param key = element to search
 		 * @return true if element is found
 		 */
-		public boolean searchRec(Node node, int key) {
+		private boolean searchRec(Node node, int key) {
 			if(node==null)
 				return false;
 			if(key == node.val)
@@ -48,7 +48,7 @@ public class BinarySearchTree {
 			return searchRec(node.right,key);
 		}
 		
-		public void insertRec(int num) {
+		public void insertKey(int num) {
 			root = insertRec(root, num);
 		}
 		
@@ -59,7 +59,7 @@ public class BinarySearchTree {
 		 * @param num = element to insert
 		 * @return expect node after insertion
 		 */
-		public Node insertRec(Node node, int num) {
+		private Node insertRec(Node node, int num) {
 			if(node == null) {
 				node = new Node(num);
 				return node;
@@ -95,7 +95,7 @@ public class BinarySearchTree {
 		 * @param num = key to delete
 		 * @return expected node after deletion
 		 */
-		public Node deleteRec(Node node, int num) {
+		private Node deleteRec(Node node, int num) {
 			if(node == null)
 				return node;
 			if(num < node.val)
@@ -110,7 +110,7 @@ public class BinarySearchTree {
 					return node.right;
 				else{ // node has 2 children
 					// update node's val to next min on right side to delete
-					node.val = getMin(node.right);
+					node.val = getMin(node.right).val;
 					// now delete that next min
 					node.right = deleteRec(node.right, node.val);
 				}
@@ -119,17 +119,15 @@ public class BinarySearchTree {
 		}
 		
 		/**
-		 * gets min element of bst
+		 * gets node with min value in bst
 		 * Runtime:O(n)
 		 * @param node = root of bst to look at
 		 */
-		public int getMin(Node node) {
-			int min = node.val;
-			while(node!=null){
-				min = node.val;
+		public Node getMin(Node node) {
+			while(node.left!=null){
 				node = node.left;
 			}
-			return min;
+			return node;
 		}
 		
 		/**
@@ -196,7 +194,7 @@ public class BinarySearchTree {
 		 * inOrder traversal should give values in increasing order for bst
 		 * Runtime: O(n)
 		 */
-		public void printInOrder(Node node) {
+		private void printInOrder(Node node) {
 			if(node==null)
 				return;
 			printInOrder(node.left);
@@ -214,13 +212,13 @@ public class BinarySearchTree {
 	         /  \    /  \      
 	       20   40  60   80     
        */
-		bst.insertRec(50);
-		bst.insertRec(30);
-		bst.insertRec(20);
-		bst.insertRec(40);
-		bst.insertRec(70);
-		bst.insertRec(60);
-		bst.insertRec(80);
+		bst.insertKey(50);
+		bst.insertKey(30);
+		bst.insertKey(20);
+		bst.insertKey(40);
+		bst.insertKey(70);
+		bst.insertKey(60);
+		bst.insertKey(80);
 		System.out.println(bst.searchRec(8));
 		bst.printInOrder();
 		System.out.println("\nDelete 40"); 

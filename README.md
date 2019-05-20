@@ -54,5 +54,5 @@ This repository includes implementations of the following algorithms in Java.
 | Binary Tree | find diameter, find height | O(n) | recursive, iterative | BinaryTreeDiameter.java |
 | Binary Tree | construct using given InOrder and PreOrder | O(n) | recursive | BinaryTreeConstruct.java |
 | Binary Tree | find max width | O(n) | recursive, iterative using queue | BinaryTreeMaxWidth.java |
-| Binary Search Tree | insert, search, delete | O(h), O(n) | recursive, iterative | BinarySearchTree.java |
+| Binary Search Tree | insert, search, delete, find min value node | O(h), O(n) | recursive, iterative | BinarySearchTree.java |
 ***
