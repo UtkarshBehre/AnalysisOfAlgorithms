@@ -55,4 +55,5 @@ This repository includes implementations of the following algorithms in Java.
 | Binary Tree | construct using given InOrder and PreOrder | O(n) | recursive | BinaryTreeConstruct.java |
 | Binary Tree | find max width | O(n) | recursive, iterative using queue | BinaryTreeMaxWidth.java |
 | Binary Search Tree | insert, search, delete, find min value node | O(h), O(n) | recursive, iterative | BinarySearchTree.java |
+| Min heap | getMini, extractMin, decreaseKey, insert, delete | O(1), O(logn) | recursive, index jumping | MinHeap.java |
 ***
