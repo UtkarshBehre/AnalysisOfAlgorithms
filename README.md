@@ -56,4 +56,6 @@ This repository includes implementations of the following algorithms in Java.
 | Binary Tree | find max width | O(n) | recursive, iterative using queue | BinaryTreeMaxWidth.java |
 | Binary Search Tree | insert, search, delete, find min value node | O(h), O(n) | recursive, iterative | BinarySearchTree.java |
 | Min heap | getMini, extractMin, decreaseKey, insert, delete | O(1), O(logn) | recursive, index jumping | MinHeap.java |
+| Graph | addEdge | O(1) | linked list, array | Graph.java |
+| Graph | addEdge, BFS traversal | O(V+E) | GraphBFS.java |
 ***
