@@ -47,7 +47,6 @@ public class SpecialStack extends Stack<Integer>{
 	public void popls(){
 		if(min.peek() == this.pop())
 			min.pop();
-		super.pop();
 	}
 	
 	/**
