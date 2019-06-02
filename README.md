@@ -57,5 +57,5 @@ This repository includes implementations of the following algorithms in Java.
 | Binary Search Tree | insert, search, delete, find min value node | O(h), O(n) | recursive, iterative | BinarySearchTree.java |
 | Min heap | getMini, extractMin, decreaseKey, insert, delete | O(1), O(logn) | recursive, index jumping | MinHeap.java |
 | Graph | addEdge | O(1) | linked list, array | Graph.java |
-| Graph | addEdge, BFS traversal, DFS traversal | O(V+E) | GraphBFSDFS.java |
+| Graph | addEdge, BFS traversal, DFS traversal | O(V+E) | queue, recursion, linkedlist, array | GraphBFSDFS.java |
 ***
