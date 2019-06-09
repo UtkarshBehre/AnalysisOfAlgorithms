@@ -32,6 +32,7 @@ This repository includes implementations of the following algorithms in Java.
 | Merge Sort for doubly linked list | O(nlogn) | similar to merge sort for singly linked list except here we maintain prev links for each node as well |
 | Quick sort for singly linked list | O(n<sup>2</sup>) | same quick sort logic except here we use new linked list to add the left, pivot and the right part of sorted list into 1 | 
 | Quick Sort for doubly linked list | O(n<sup>2</sup>) | same quick sort logic except here we use new linked list to add the left, pivot and the right part of sorted list into 1 whilst maintaining prev links|
+| Topological Sort | O(V+E) | sort for DAG using DFS for each edge as starting not repeating the ones printed |
 ***
 
 ## Data Structures
